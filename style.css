@@ -1,0 +1,120 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+
+    background-image: linear-gradient(to right,#01022d,#000);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+a{
+        color: white;
+    text-decoration: none;
+}
+.container{
+    background-image: linear-gradient(to right,#01022de5 30% ,#00000067)
+    ,url(main.jpg);
+    
+    
+    width: 90%;
+    height: 640px;
+}
+.container:hover{
+      background-image: linear-gradient(to right,#01022de5 30% ,transparent,#00000067)
+    ,url(main.jpg);
+    
+
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+ul a{
+    border-bottom :2px  white solid transparent;
+}
+.logo{
+    font-size: 40px;
+    
+    font-style: italic;
+    text-transform: uppercase;
+}
+ul{
+    width: 400px;
+    font-style: italic;
+    font-variant: small-caps;
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-around;
+    list-style: none;
+}
+.main{
+    padding-top: 140px;
+    height: 500px;
+    width: 300px;
+   color: white;
+   padding-left:20PX ;
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 100px;
+    font-style: italic;
+    font-weight: 300;
+    letter-spacing: 3PX;
+}
+p{
+    padding-top: 10px;
+    width: 300px;
+    letter-spacing: 2px;
+}
+
+ul a:hover{
+     border-bottom:2px  white solid;
+}
+button{
+    margin-top: 30px;
+    font-size: 25px;
+    border-radius: 8px;
+    border:2px  solid transparent ;
+    cursor: pointer;
+    padding: 2px;
+
+}
+button:hover{
+    background-color: transparent;
+    border-color: white;
+    color: white;
+}
+@media (max-width: 768px) {.container {
+        height: auto;
+        background-position: center;
+        background-size: cover;
+    }
+  .main {
+        padding-top: 60px;
+        width: 90%;
+        padding-left: 10px;
+    }
+
+    button{
+        font-size: 20px;
+    }
+
+    ul{
+        width: 200px;
+        
+    }
+    .logo{
+        font-size: 26px;
+
+    }
+
+}
